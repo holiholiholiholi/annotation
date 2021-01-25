@@ -1,0 +1,218 @@
+T1	site_expansion 29 33	baut
+T2	organization 23 28	Varta
+T3	job_increase 172 176	neue
+T4	organization 197 204	Méguin"
+T5	job_increase 318 324	Aufbau
+T6	organization 288 293	abat+
+T7	job_increase 481 489	schaffen
+T8	organization 424 432	Hochbahn
+T9	market_exit 518 524	stellt
+T10	organization 496 500	Oply
+T11	market_exit 708 720	zurückziehen
+T12	organization 611 620	Accenture
+T14	organization 740 755	KM Contros GmbH
+T15	market_exit 867 870	ist
+T16	organization 871 881	Blackberry
+T17	market_exit 1043 1053	nicht mehr
+T18	organization 1006 1027	Antonietti Kerzers AG
+T19	market_exit 1155 1165	aufzugeben
+T20	organization 1116 1119	N26
+T23	job_increase 1380 1385	zieht
+T24	organization 1342 1346	Lime
+T27	layoff 1665 1674	entlassen
+T28	organization 1556 1559	ABB
+T30	organization 1678 1681	ABB
+T32	organization 1750 1754	Oply
+T33	market_exit 1997 2003	stellt
+T34	organization 1909 1913	Oply
+T36	organization 1992 1996	Oply
+T37	market_exit 2068 2075	beendet
+T38	organization 2058 2067	Oply GmbH
+T40	organization 2188 2192	Oply
+T41	market_exit 2348 2360	zurückziehen
+T42	organization 2251 2260	Accenture
+T45	investment 2754 2765	investieren
+T46	organization 2628 2647	Mahindra & Mahindra
+T47	investment 2922 2929	erhöhen
+T48	organization 2804 2817	Kühne + Nagel
+T51	investment 3234 3244	investiert
+T52	organization 3180 3185	Fanuc
+T54	organization 3364 3371	Sidekix
+T61	relocation 4582 4590	verlegen
+T62	organization 4479 4491	viasaar GmbH
+T65	investment 4872 4879	stecken
+T66	organization 4760 4764	BASF
+T68	organization 4883 4887	Opel
+T69	investment 4983 4987	Laut
+T70	organization 5077 5081	BASF
+T71	market_exit 5155 5159	gibt
+T72	organization 5151 5154	N26
+T74	organization 5270 5273	SAP
+T75	relocation 5477 5488	eingemietet
+T76	organization 5387 5390	SAP
+T77	relocation 5492 5495	Gut
+E1	site_expansion:T1 trigger:T93 trigger2:T92 organization:T2
+E2	job_increase:T3 trigger:T94 numIncreased:T95 organization:T4 location:T96
+E3	job_increase:T5 numIncreased:T102 trigger:T100 trigger2:T101 organization:T6 location:T103
+E4	job_increase:T7 trigger:T104 numIncreased:T106 date:T105 organization:T8
+E5	market_exit:T9 trigger:T107 trigger2:T108 organization:T10 date:T109
+E6	market_exit:T11 organization:T12
+E8	market_exit:T15 trigger:T114 organization:T16 date:T115
+E9	market_exit:T17 trigger:T116 organization:T18
+E10	market_exit:T19 location:T117 organization:T20
+E12	job_increase:T23 trigger:T21 trigger2:T22 organization:T24
+E14	layoff:T27 numLayoff:T121 organization:T28
+E17	market_exit:T33 organization:T36 trigger:T31 trigger2:T127
+E19	market_exit:T37 organization:T38 date:T35 location:T128 location2:T129 location3:T130
+E21	market_exit:T41 organization:T42
+E24	investment:T45 invested:T136 totalPrice:T137 investor:T46
+E25	investment:T47 trigger:T138 invested:T139 investor:T48
+E27	investment:T51 investor:T52 totalPrice:T49 invested:T50
+E34	relocation:T61 trigger:T59 organization:T62 oldLocation:T60 newLocation:T149 newLocation2:T150
+E37	investment:T65 trigger:T158 attribute_S:T159 totalPrice:T157 investor:T66 invested:T160
+E39	investment:T69 
+E40	market_exit:T71 organization:T72 trigger:T167 trigger2:T168 location:T169
+E42	relocation:T75 newLocation:T176 organization:T76
+E43	relocation:T77 
+T92	trigger 155 158	aus
+T93	trigger 109 119	Produktion
+T94	trigger 177 181	Jobs
+T95	number 169 171	60
+T96	location 185 194	Saarlouis
+T97	money 221 238	20 Millionen Euro
+T98	investment 205 215	investiert
+E51	investment:T98 investor:T4 totalPrice:T97 invested:T99
+T99	investedObj 242 248	Ausbau
+T100	trigger 340 345	neuen
+T101	trigger 346 360	Arbeitsplätzen
+T102	number 336 339	200
+T103	location 298 309	St. Ingbert
+T104	trigger 467 480	Arbeitsplätze
+T105	date 436 450	kommenden Jahr
+T106	number 451 454	210
+T107	trigger 564 571	Betrieb
+T108	trigger 587 590	ein
+T109	date 545 556	27. Februar
+T13	organization 775 793	Kongsberg Maritime
+T110	organization 797 818	AML Oceanographic Ltd
+T111	attribute 823 834	eingestellt
+T112	location 759 770	Deutschland
+T113	acquisition 728 735	Verkauf
+E7	acquisition:T113 attribute_N:T111 acquired:T14 location:T112 seller:T13 buyer:T110
+A1	Negation E7
+T114	trigger 955 959	raus
+T115	date 851 866	31. August 2020
+T116	trigger 1054 1059	geben
+T117	location 1138 1148	britischen
+T118	location 1086 1098	Deutschlands
+T21	trigger 1386 1390	sich
+T22	trigger 1416 1422	zurück
+T25	layoff 1347 1351	baut
+E11	layoff:T25 organization:T24 numLayoff:T120 trigger:T26 trigger2:T119
+T26	trigger 1361 1372	Mitarbeiter
+T119	trigger 1373 1375	ab
+T120	number 1357 1360	100
+T121	number 1648 1652	1000
+T122	location 1606 1609	Ózd
+T123	location 1611 1624	Nordostungarn
+T124	site_closure 1626 1638	abzuschalten
+E13	site_closure:T124 location:T122 organization:T28
+T29	market_exit 1719 1729	einstellen
+E15	market_exit:T29 trigger:T125 organization:T30
+T125	trigger 1691 1698	Betrieb
+T126	market_exit 1742 1745	Aus
+E52	market_exit:T126 organization:T32
+T31	trigger 2011 2017	Dienst
+T127	trigger 2047 2050	ein
+T35	date 2080 2090	27 Februar
+T128	location 2134 2140	Berlin
+T129	location 2142 2149	Hamburg
+T130	location 2154 2161	München
+T131	market_exit 2193 2197	gibt
+E16	market_exit:T131 trigger:T132 trigger2:T133 location:T39 organization:T40
+T132	trigger 2205 2211	Dienst
+T133	trigger 2227 2230	auf
+T39	location 2215 2226	Deutschland
+T43	organization 2493 2503	Blackberry
+T44	market_exit 2617 2624	beendet
+E18	market_exit:T44 organization:T43
+T134	market_exit 2533 2544	eingestellt
+E20	market_exit:T134 organization:T43
+T135	date 2780 2784	2022
+T136	organization 2744 2753	Ssangyong
+T137	money 2663 2681	387 Millionen Euro
+T138	trigger 2891 2901	Engagement
+T139	investedObj 2910 2921	Klimaschutz
+T49	money 3266 3278	200 Mio. EUR
+T50	investedObj 3286 3320	europäischen Tochtergesellschaften
+T140	location 3384 3388	Uden
+T141	location 3399 3405	Arnhem
+T142	location 3410 3419	Eindhoven
+T143	investment 3468 3478	investiert
+E22	investment:T143 investor:T54 invested:T145
+T144	organization 3453 3467	Konica Minolta
+T145	investedObj 3433 3448	Accuriojet KM-1
+T53	organization 3524 3529	Fanuc
+T55	job_increase 3583 3592	gewachsen
+E23	job_increase:T55 trigger:T146 organization:T53 numBefore:T147 numAfter:T148
+T146	trigger 3571 3582	Mitarbeiter
+T147	number 3561 3563	10
+T148	number 3568 3570	80
+T56	relocation 4386 4392	Wegzug
+E26	relocation:T56 organization:T57 oldLocation:T58
+T57	organization 4418 4436	Galeries Lafayette
+T58	location 4353 4368	Friedrichstraße
+T59	trigger 4518 4526	Standort
+T60	location 4531 4541	Sengscheid
+T149	location 4547 4555	Rohrbach
+T150	location 4563 4578	Industriestraße
+T151	organization 4612 4616	BASF
+T152	location 4630 4660	brandenburgischen Schwarzheide
+T153	trigger 4671 4677	Fabrik
+T154	site_expansion 4617 4626	errichtet
+E28	site_expansion:T154 trigger:T153 organization:T151 location:T152
+T63	organization 4723 4727	BASF
+T155	organization 4734 4739	Tesla
+T156	location 4745 4756	Brandenburg
+T64	relocation 4728 4733	folgt
+E29	relocation:T64 newLocation:T156 organization:T63
+T157	money 4807 4825	400 Millionen Euro
+T158	trigger 4826 4828	in
+A2	Speculation E37
+T159	attribute 4779 4795	zum Ziel gesetzt
+T160	investedObj 4833 4868	Herstellung von Batteriematerialien
+T67	date 4896 4900	2024
+T161	location 4919 4933	Kaiserslautern
+T162	site_expansion 4934 4942	fertigen
+E30	site_expansion:T162 location:T161 organization:T68 trigger:T163
+T163	trigger 4916 4918	in
+T164	organization 5005 5010	Tesla
+T165	investment 5028 5041	Investitionen
+E31	investment:T165 investor:T164 invested:T166
+T166	investedObj 5045 5056	Brandenburg
+T167	trigger 5236 5241	Markt
+T168	trigger 5242 5245	auf
+T169	location 5225 5235	britischen
+T170	location 5294 5312	Freiberg am Neckar
+T171	location 5317 5327	Herrenberg
+T172	location 5363 5372	Stuttgart
+T73	market_exit 5274 5278	gibt
+E32	market_exit:T73 organization:T74 trigger:T173 trigger2:T174 location:T170 location2:T171
+T173	trigger 5284 5293	Standorte
+T174	trigger 5328 5331	auf
+T175	organization 5432 5451	Gieag Immobilien AG
+T176	location 5467 5476	Gerlingen
+T177	organization 5556 5565	Laserline
+T178	organization 5576 5580	Cewe
+T179	location 5639 5646	Dresden
+T180	organization 5650 5659	Saxoprint
+T181	relocation 5660 5669	verlagert
+E33	relocation:T181 organization:T177 newLocation:T179 oldLocation:T183
+T183	location 5611 5617	Berlin
+T182	acquisition 5523 5532	Übernahme
+E35	acquisition:T182 acquired:T177 buyer:T178
+T184	relocation 5818 5827	verlagern
+E36	relocation:T184 organization:T185 oldLocation:T187 date:T186
+T185	organization 5715 5720	Conti
+T186	date 5772 5781	Ende 2021
+T187	location 5786 5797	Babenhausen

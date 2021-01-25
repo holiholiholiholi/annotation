@@ -1,0 +1,51 @@
+T1	date 0 7	2010年7月
+T2	organization 8 12	三普药业
+T3	organization 17 21	远东控股
+T4	acquisition 28 30	收购
+E1	acquisition:T4 buyer:T2 acquiredObject:T5 acquired:T15 date:T1 buyer2:T6
+T5	acquiredObject 34 44	电线电缆业务优质资产
+T6	organization 45 49	远东控股
+T7	organization 51 55	三普药业
+T8	organization 65 69	三普药业
+T9	date 76 80	6月4日
+T10	organization 81 83	公司
+T11	money 90 96	2.85亿元
+T12	organization 98 112	北京水木源华电气股份有限公司
+T13	acquiredObject 112 117	51%股权
+T14	acquisition 96 98	收购
+E2	acquisition:T14 date:T9 buyer:T10 preis:T11 acquiredObject:T13 acquired:T12 attribute_S:T33
+T15	organizationRef 30 31	其
+T16	date 119 127	北京时间6月5日
+T17	organization 128 132	东芝公司
+T18	organization 154 169	东芝客户解决方案部门（TCS）
+T19	acquiredObject 169 177	80.1%的股份
+T20	organization 180 184	夏普公司
+T21	acquisition 177 179	出售
+E3	acquisition:T21 buyer:T20 acquiredObject:T19 acquired:T18 seller:T17 date:T16
+A1	Speculation E2
+T23	organization 238 242	三普药业
+T24	organization 247 251	远东控股
+T25	acquiredObject 264 274	电线电缆业务优质资产
+T26	organization 275 279	远东控股
+T27	organization 281 285	三普药业
+T28	organization 295 299	三普药业
+T29	organization 260 261	其
+T30	acquisition 258 260	收购
+E4	acquisition:T30 buyer:T23 acquired:T29 acquiredObject:T25
+T22	organization 230 237	2010年7月
+T31	person 128 130	东芝
+*	REF T15 T3
+R1	Test Arg1:T6 Arg2:T7	
+R2	Test Arg1:T27 Arg2:T28	
+*	Test T23 T24
+T32	acquisition 139 142	已决定
+E5	acquisition:T32 
+T33	attribute 87 88	拟
+T34	organization 306 332	Helios Investment Partners
+T35	organization 397 434	the Egyptian-American Enterprise Fund
+T36	acquisition 447 455	acquired
+E6	acquisition:T36 buyer:T34 acquired:T38 acquiredObject:T37 date:T39 buyer2:T35
+T37	acquiredObject 456 461	96.7%
+T38	organization 465 495	Misr Hytech Seed International
+T39	date 513 519	Monday
+T40	organizationRef 139 142	已决定

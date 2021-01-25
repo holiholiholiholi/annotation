@@ -1,0 +1,171 @@
+T3	organization 373 380	Capiton
+T4	investment 499 508	beteiligt
+T5	organization 491 498	Capiton
+T9	acquisition 1037 1047	übernommen
+T10	organization 949 952	EQT
+T16	organization 1311 1318	Siemens
+T17	fundraise 1520 1529	gesichert
+T19	organization 1553 1565	Ingram Micro
+T20	investment 1864 1874	investiert
+T21	organization 1851 1863	Jägermeister
+T22	investment 2002 2015	Investitionen
+T23	organization 1928 1939	Software AG
+T24	investment 2124 2131	stecken
+T25	organization 2091 2096	Tesla
+T26	investment 2256 2264	ausgeben
+T27	organization 2188 2193	Tesla
+T31	organization 2615 2619	BASF
+T34	relocation 2908 2911	Die
+T35	organization 2928 2940	Silent Gliss
+T39	organization 3167 3174	Femtasy
+T40	fundraise 3270 3287	Seed-Finanzierung
+T41	organization 3293 3299	Kewazo
+T43	organization 3452 3458	Air up
+T45	organization 3556 3561	Oviva
+T46	fundraise 3711 3718	sammelt
+T47	organization 3703 3710	Revolut
+T48	fundraise 3789 3816	Series A-Finanzierungsrunde
+T49	organization 3771 3775	Home
+T50	fundraise 3894 3901	bekommt
+T51	organization 3871 3875	Home
+T52	fundraise 4004 4013	gesichert
+T53	organization 3939 3944	Capmo
+T54	fundraise 4145 4153	erhalten
+T55	organization 4090 4097	Selfapy
+T57	organization 4223 4235	Sanity Group
+T59	organization 4307 4318	Wealthpilot
+T77	organization 5508 5520	Saudi Aramco
+T79	organization 5654 5668	Schwarz-Gruppe
+T86	fundraise 6296 6306	einsammeln
+T87	organization 6262 6270	Zhenmeat
+T92	fundraise 6657 6668	Investition
+T93	organization 6636 6644	Personio
+T95	market_exit 6851 6862	eingestellt
+T96	market_exit 6875 6883	verlässt
+E3	investment:T4 trigger:T98 trigger2:T99 investor:T5 invested:T100
+E5	acquisition:T9 acquired:T8 buyer:T10 buyer2:T6
+E9	fundraise:T17 trigger:T14 totalPrice:T15 investor:T102 invested:T103
+E11	investment:T20 investor:T21 invested:T105
+E12	investment:T22 invested:T107 date:T106 investor:T23
+E13	investment:T24 attribute_S:T110 invested:T109 investor:T25 totalPrice:T108
+E14	investment:T26 investor:T27 trigger:T113 invested:T112 totalPrice:T111
+E18	relocation:T34 
+E21	fundraise:T40 invested:T41 totalPrice:T38
+E24	fundraise:T46 trigger:T127 invested:T47 totalPrice:T128
+E25	fundraise:T48 invested:T49 totalPrice:T129
+E26	fundraise:T50 trigger:T130 totalPrice:T131 invested:T51
+E27	fundraise:T52 totalPrice:T132 invested:T53
+E28	fundraise:T54 trigger:T135 trigger2:T134 totalPrice:T133 invested:T55
+E44	fundraise:T86 totalPrice:T71 investor:T87
+E47	fundraise:T92 invested:T93 totalPrice:T73
+E49	market_exit:T95 trigger:T78 location:T81 organization:T80
+E50	market_exit:T96 trigger:T84 organization:T85
+T1	acquisition 461 470	Übernahme
+E1	acquisition:T1 acquired:T2 buyer:T97
+T2	organization 475 487	Healthfood24
+T97	organization 417 425	Alphapet
+T98	trigger 629 631	an
+T99	trigger 638 653	Kapitalerhöhung
+T100	organization 658 666	Alphapet
+T101	organization 590 621	Family Office Reimann Investors
+T6	organization 1000 1005	Omers
+T7	organization 1010 1013	KKR
+T8	organization 1018 1036	Deutsche Glasfaser
+T11	relocation 1338 1345	bezogen
+E2	relocation:T11 trigger:T12 newLocation:T13 organization:T16
+T12	trigger 1305 1310	neuen
+T13	location 1329 1337	Erlangen
+T14	trigger 1473 1491	Finanzierungsrunde
+T15	money 1500 1519	28 Millionen Dollar
+T102	organization 1450 1460	AccelFoods
+T103	organization 1375 1386	Alpha Foods
+T104	investment 1681 1694	Investitionen
+E4	investment:T104 invested:T18 investor:T19
+T18	investedObj 1711 1717	Region
+T105	investedObj 1878 1897	Life­style-Angebote
+T106	date 2019 2037	Geschäftsjahr 2020
+T107	investedObj 1945 1971	Unternehmenstransformation
+T108	money 2065 2085	vier Milliarden Euro
+T109	investedObj 2113 2123	Gigafacory
+A1	Speculation E13
+T110	attribute 2138 2150	ist die Rede
+T111	money 2195 2215	vier Milliarden Euro
+T112	investedObj 2244 2255	Gigafactory
+T113	trigger 2216 2219	für
+T28	organization 2350 2354	BASF
+T29	location 2358 2391	südbrandenburgischen Schwarzheide
+T114	location 2393 2414	Oberspreewald-Lausitz
+T115	site_expansion 2515 2523	aufbauen
+E6	site_expansion:T115 trigger:T116 organization:T28 location:T29
+T116	trigger 2421 2427	Anlage
+T117	investedObj 2623 2635	Schwarzheide
+T118	location 2639 2650	Brandenburg
+T119	investment 2586 2610	Investitionsentscheidung
+E7	investment:T119 investor:T31 invested:T117 investor2:T118
+T30	person 2558 2572	Peter Altmaier
+T32	site_closure 2941 2950	schliesst
+E8	site_closure:T32 organization:T35 location:T33 location2:T120
+T33	location 2969 2977	Gümligen
+T120	location 2982 2986	Lass
+T121	relocation 2991 2996	zeiht
+E10	relocation:T121 organization:T35 newLocation:T122 oldLocation:T33 oldLocation2:T120
+T122	location 3010 3014	Bern
+T36	fundraise 3184 3202	Finanzierungsrunde
+E15	fundraise:T36 invested:T39
+T37	location 3152 3158	Kölner
+T38	money 3311 3329	2,5 Millionen Euro
+T123	fundraise 3474 3486	Finanzierung
+E16	fundraise:T123 trigger:T125 totalPrice:T124 invested:T43
+T124	money 3499 3517	2,3 Millionen Euro
+T125	trigger 3518 3525	sichern
+T42	fundraise 3567 3588	Series-B-Finanzierung
+E17	fundraise:T42 invested:T45 totalPrice:T44
+T44	money 3619 3636	19 Millionen Euro
+T126	money 3638 3660	21 Millionen US-Dollar
+T127	trigger 3743 3746	ein
+T128	money 3719 3742	500 Millionen US-Dollar
+T129	money 3837 3854	11 Millionen Euro
+T130	trigger 3929 3936	Kapital
+T131	money 3902 3919	11 Millionen Euro
+T132	money 3962 3981	fünf Millionen Euro
+T133	money 4109 4129	sechs Millionen Euro
+T134	trigger 4134 4144	Investoren
+T135	trigger 4130 4133	von
+T136	person 4210 4222	Finn Hänsels
+T137	money 4236 4253	20 Millionen Euro
+T138	fundraise 4273 4291	Finanzierungsrunde
+E19	fundraise:T138 totalPrice:T137 invested:T57
+T56	fundraise 4332 4344	Finanzierung
+E20	fundraise:T56 invested:T59 trigger:T58 trigger2:T139
+T58	trigger 4319 4325	stockt
+T139	trigger 4345 4348	auf
+T60	person 5299 5310	Thomas Rabe
+T61	organization 5282 5293	Bertelsmann
+T62	organization 5363 5372	RTL Group
+T63	investment 5460 5473	Investitionen
+E22	investment:T63 invested:T64 investor:T60
+T64	investedObj 5481 5492	TV-Geschäft
+T65	investment 5585 5592	stecken
+E23	investment:T65 invested:T67 trigger:T66 investor:T77
+T66	trigger 5554 5556	in
+T67	investedObj 5561 5584	Aufbau einer Windsparte
+T68	organization 5865 5873	Zhenmeat
+T69	fundraise 5906 5916	Investoren
+E29	fundraise:T69 attribute_S:T70 invested:T68
+A2	Speculation E29
+T70	attribute 5887 5900	auf der Suche
+T71	money 6271 6295	zwei Millionen US-Dollar
+T72	location 6330 6335	China
+T73	money 6691 6708	68 Millionen Euro
+T74	money 6710 6732	75 Millionen US-Dollar
+T75	bankruptcy 6748 6759	insolventer
+E30	bankruptcy:T75 organization:T76
+T76	organization 6760 6771	Seiffe-GmbH
+T78	trigger 6843 6850	Betrieb
+T80	organization 6815 6826	Seiffe-GmbH
+T81	location 6831 6838	Homberg
+T82	trigger 6736 6743	Betrieb
+T83	market_exit 6777 6788	eingestellt
+E31	market_exit:T83 organization:T76 trigger:T82
+T84	trigger 6898 6903	Markt
+T85	organization 6865 6874	Deliveroo

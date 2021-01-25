@@ -1,0 +1,22 @@
+T1	organization 0 15	Rocket Internet
+T2	trigger 21 25	Geld
+T3	investedObj 29 39	Immobilien
+T4	investment 40 47	stecken
+E1	investment:T4 investor:T1 invested:T3 trigger:T2
+T5	market_exit 52 58	stellt
+E2	market_exit:T5 organization:T1 trigger:T6 trigger2:T8 location:T7
+T6	trigger 66 73	Betrieb
+T7	location 77 88	Deutschland
+T8	trigger 89 92	ein
+T9	person 109 120	Colin Hanks
+T10	person 135 144	Tom Hanks
+T11	person 149 163	Samantha Lewes
+T12	person_parent 128 131	son
+E3	person_parent:T12 person:T9 parent:T10 parent2:T11
+T13	organization 180 185	InBev
+T14	date 194 201	June 11
+T15	attribute 205 211	wanted
+T16	acquisition 215 218	buy
+E4	acquisition:T16 attribute_S:T15 acquired:T17 date:T14 buyer:T13
+T17	organization 219 233	Anheuser-Busch
+A1	Speculation E4

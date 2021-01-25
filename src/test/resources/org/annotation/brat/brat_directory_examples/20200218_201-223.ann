@@ -1,0 +1,136 @@
+T1	market_exit 16 21	geben
+T7	relocation 904 912	umziehen
+T11	fundraise 1320 1330	Investoren
+T12	fundraise 1407 1414	sichert
+T13	fundraise 1468 1475	sichert
+T14	job_increase 1533 1542	entstehen
+T15	job_increase 1765 1771	sorgen
+T17	job_increase 1894 1907	Arbeitsplätze
+T19	job_increase 2066 2070	Jobs
+E1	market_exit:T1 trigger:T25 location:T27 organization:T24 organization2:T26 organization3:T90
+E7	relocation:T7 trigger:T28 trigger2:T29 newLocation:T31 oldLocation:T30 date:T32
+E11	fundraise:T11 trigger:T39 totalPrice:T10 invested:T40
+E12	fundraise:T12 invested:T44 trigger:T42 trigger2:T43
+E13	fundraise:T13 trigger:T46 invested:T48 totalPrice:T47
+E14	job_increase:T14 trigger:T50 organization:T53 numIncreased:T51
+E15	job_increase:T15 trigger:T57 numIncreased:T58 trigger2:T56 organization:T61 location:T60
+E17	job_increase:T17 trigger:T64 numIncreased:T66 organization:T67
+E19	job_increase:T19 date:T74 numIncreased:T75 organization:T76
+T24	organization 12 15	BMW
+T25	trigger 47 50	auf
+T26	organization 0 7	Daimler
+T27	location 35 46	Nordamerika
+T2	investment 739 749	Investoren
+E2	investment:T2 invested:T5 investor:T4 investor2:T3
+T3	organization 691 713	Mitsubishi Corporation
+T4	organization 718 721	NTT
+T5	organization 760 764	Here
+T6	person 769 784	Edzard Overbeek
+T28	trigger 823 831	aufgeben
+T29	trigger 814 822	Zentrale
+T30	location 805 813	Münchner
+T31	location 868 875	Pullach
+T32	date 836 862	um den Jahreswechsel herum
+T33	relocation 945 950	Umzug
+E3	relocation:T33 organization:T34 date:T8
+T8	date 925 936	17. Oktober
+T34	organization 955 962	habemus
+T35	investment 1020 1027	stecken
+E4	investment:T35 invested:T38 trigger:T37 trigger2:T36 investor:T9
+T36	trigger 1001 1005	Geld
+T37	trigger 1006 1008	in
+T38	investedObj 1009 1019	Immobilien
+T9	organization 980 995	Rocket Internet
+T10	money 1339 1359	sechs Millionen Euro
+T39	trigger 1331 1338	stecken
+T40	organization 1266 1274	Coachhub
+T41	location 1239 1247	Berliner
+T42	trigger 1415 1419	sich
+T43	trigger 1429 1441	finanzierung
+T44	organization 1400 1406	E-bot7
+T45	location 1379 1388	Münchener
+T46	trigger 1476 1480	sich
+T47	money 1490 1507	14 Millionen Euro
+T48	organization 1461 1467	Inkitt
+T49	location 1444 1452	Berliner
+T50	trigger 1519 1532	Arbeitsplätze
+T51	number 1514 1518	3400
+T52	location 1546 1563	Schleswig-Holsten
+T53	organization 1573 1584	Seiffe-GmbH
+T54	relocation 1607 1618	angesiedelt
+E5	relocation:T54 trigger:T55 organization:T53 newLocation:T52
+T55	trigger 1595 1598	neu
+T56	trigger 1731 1734	für
+T57	trigger 1751 1764	Arbeitsplätze
+T58	number 1740 1745	3.400
+T59	relocation 1702 1713	angesiedelt
+E6	relocation:T59 organization:T61 newLocation:T60
+T60	location 1658 1676	Schleswig-Holstein
+T61	organization 1690 1701	Seiffe-GmbH
+T62	organization 1830 1841	Seiffe-GmbH
+T63	job_increase 1799 1820	Beschäftigungszuwachs
+E8	job_increase:T63 organization:T62 location:T16
+T16	location 1775 1780	Fürth
+T64	trigger 1889 1893	neue
+T65	money 1870 1881	320 Mio PLN
+T66	number 1885 1888	100
+T67	organization 1844 1858	LG Electronics
+T68	investment 1859 1869	investiert
+E9	investment:T68 investor:T67 totalPrice:T65 invested:T69
+T69	investedObj 1889 1907	neue Arbeitsplätze
+T70	number 1938 1942	1000
+T71	job_increase 1948 1961	Arbeitsplätze
+E10	job_increase:T71 organization:T18 location:T73 trigger:T72 numIncreased:T70
+T72	trigger 1943 1947	neue
+T18	organization 1910 1921	Seiffe-GmbH
+T73	location 1969 1971	A2
+T74	date 2074 2078	2025
+T75	number 2042 2065	vier bis fünf Millionen
+T76	organization 1978 1989	Seiffe-GmBH
+A1	Speculation E19
+T20	organization 2098 2107	Accenture
+T77	trigger 2133 2146	zur Verfügung
+T78	market_exit 2147 2154	stellen
+E16	market_exit:T78 trigger:T77 organization:T20
+T79	market_exit 2168 2174	stellt
+E18	market_exit:T79 organization:T21 trigger:T80
+T80	trigger 2194 2197	ein
+T21	organization 2158 2167	Accenture
+T22	date 2204 2214	27 Februar
+T81	organization 2221 2225	Oply
+T82	location 2229 2240	Deutschland
+T83	trigger 2241 2251	nicht mehr
+T84	market_exit 2252 2265	zur Verfügung
+E20	market_exit:T84 trigger:T83 organization:T81 date:T22
+T85	layoff 2274 2282	entlässt
+E21	layoff:T85 organization:T23 trigger:T86
+T86	trigger 2283 2294	Mitarbeiter
+T87	market_exit 2299 2304	zieht
+E22	market_exit:T87 organization:T23 trigger:T88 trigger2:T89
+T88	trigger 2305 2309	sich
+T89	trigger 2325 2331	zurück
+T23	organization 2269 2273	Lime
+T90	organization 22 31	Share Now
+T91	organization 53 60	Siemens
+T92	organization 108 117	Iberdrola
+T93	organization 149 163	Siemens-Gamesa
+T94	acquisition 164 172	erwerben
+E23	acquisition:T94 acquired:T93 seller:T92 trigger:T95 attribute_S:T96 buyer:T91
+T95	trigger 84 103	Minderheitenanteile
+T96	attribute 61 65	will
+A2	Speculation E23
+T97	organization 204 214	Mitsubishi
+T98	organization 219 222	NTT
+T99	organization 248 252	Here
+T100	acquisition 223 229	steigt
+E24	acquisition:T100 buyer:T98 buyer2:T97 trigger:T101 acquired:T99
+T101	trigger 253 256	ein
+T102	organization 277 299	Mitsubishi Corporation
+T103	organization 318 321	NTT
+T104	acquisition 322 330	erwerben
+E25	acquisition:T104 buyer:T103 buyer2:T102 acquired:T106 acquired2:T109
+T105	percent 371 381	30 Prozent
+T106	organization 402 406	Here
+T107	date 410 417	Freitag
+T108	location 421 430	Amsterdam
+T109	acquiredObj 371 393	30 Prozent der Anteile

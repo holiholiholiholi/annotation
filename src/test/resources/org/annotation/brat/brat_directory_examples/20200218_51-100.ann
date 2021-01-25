@@ -1,0 +1,307 @@
+T1	bankruptcy 49 58	insolvent
+T2	organization 32 44	TreasureHunt
+T3	acquisition 99 108	übernimmt
+T4	acquisition 214 223	übernimmt
+T5	acquisition 374 383	übernimmt
+T6	acquisition 493 502	übernimmt
+T7	acquisition 620 629	übernimmt
+T8	acquisition 809 818	übernimmt
+T9	acquisition 895 904	übernimmt
+T10	acquisition 981 990	übernimmt
+T11	acquisition 1111 1120	übernimmt
+T12	acquisition 1214 1221	erwirbt
+T13	acquisition 1411 1424	wird Teil von
+T14	acquisition 1555 1564	Übernahme
+T15	acquisition 1702 1710	schnappt
+T16	acquisition 1991 2001	übernommen
+T17	acquisition 2057 2067	übernommen
+T19	organization 2168 2175	Mologen
+T20	bankruptcy 2463 2469	pleite
+T21	organization 2396 2404	ZuP GmbH
+T22	bankruptcy 2648 2659	eingeleitet
+T23	organization 2606 2623	Bente Yachts GmbH
+T24	organization 2637 2647	Bente GmbH
+T25	bankruptcy 2726 2736	schlittert
+T26	organization 2741 2756	Climacraft GmbH
+T28	organization 2804 2830	Bavaria Flughafen Transfer
+T29	acquisition 3027 3037	übernommen
+T30	acquisition 3125 3133	erworben
+T31	acquisition 3382 3390	erworben
+T32	organization 3277 3304	HELMA Ferienimmobilien GmbH
+T33	acquisition 3533 3541	erworben
+T34	organization 3398 3429	Deutsche Konsum REIT-AG ("DKR")
+T35	acquisition 3656 3664	erworben
+T36	organization 3563 3566	ILG
+T37	acquisition 3749 3762	abgeschlossen
+T38	acquisition 4036 4044	erworben
+T39	acquisition 4112 4118	Ankauf
+T40	organization 4052 4069	FCR Immobilien AG
+T41	acquisition 4221 4228	erwirbt
+T42	organization 4207 4220	RLI Investors
+T43	acquisition 4533 4543	übernehmen
+T44	job_increase 4570 4579	entstehen
+T45	job_increase 4754 4764	angelaufen
+T46	organization 4694 4700	Amazon
+T47	job_increase 4791 4804	Arbeitsplätze
+T48	organization 4768 4773	Varta
+T49	job_increase 4952 4965	Arbeitsplätze
+T50	organization 4862 4880	Schleswig-Holstein
+T51	acquisition 5063 5069	gehört
+T52	organization 5007 5012	Varta
+T53	job_increase 5228 5249	Beschäftigungszuwachs
+T54	location 5204 5209	Fürth
+T55	job_increase 5257 5270	Arbeitsplätze
+T56	organization 5276 5293	Logistiker Witron
+T57	site_expansion 5528 5533	bauen
+T58	job_increase 5691 5705	Arbeitsplätzen
+T59	organization 5558 5565	Easyjet
+T60	job_increase 5764 5777	Arbeitsplätze
+T61	organization 5721 5735	LG Electronics
+T64	job_increase 5920 5933	Arbeitsplätze
+T65	organization 5897 5902	Apple
+T66	job_increase 5975 5988	Arbeitsplätze
+T67	organization 6079 6085	Amazon
+T68	job_increase 6234 6247	Arbeitsplätze
+T69	organization 6152 6164	snt-regiocom
+T72	job_increase 6548 6561	Arbeitsplätze
+T73	job_increase 6671 6675	Jobs
+T74	job_increase 6734 6747	Arbeitsplätze
+T75	organization 6687 6692	Varta
+E1	bankruptcy:T1 organization:T2 location:T78
+E2	acquisition:T3 buyer:T79 price:T80 trigger:T81 acquired:T82
+E3	acquisition:T4 buyer:T84 acquired:T86
+E4	acquisition:T5 buyer:T91 acquired:T89
+E5	acquisition:T6 buyer:T92 acquired:T94
+E6	acquisition:T7 buyer:T95 acquired:T96
+E7	acquisition:T8 buyer:T99 acquired:T100
+E8	acquisition:T9 buyer:T103 acquired:T104
+E9	acquisition:T10 buyer:T106 acquired:T107
+E10	acquisition:T11 buyer:T109 acquired:T111
+E11	acquisition:T12 buyer:T112 acquired:T114
+E12	acquisition:T13 acquired:T116 buyer:T115
+E13	acquisition:T14 trigger:T119 buyer:T121 acquired:T120
+E14	acquisition:T15 buyer:T125 trigger:T126 acquired:T124
+E15	acquisition:T16 acquired:T130 buyer:T127
+E16	acquisition:T17 acquired:T135 buyer:T133
+E18	bankruptcy:T20 organization:T21
+E19	bankruptcy:T22 organization:T24 organization2:T23 trigger:T142 date:T18
+E20	bankruptcy:T25 trigger:T145 organization:T26 trigger2:T143
+E22	acquisition:T29 acquired:T151 date:T150 buyer:T27
+E23	acquisition:T30 acquired:T155 buyer:T154
+E24	acquisition:T31 buyer:T32 date:T163 location:T164 acquired:T165
+E25	acquisition:T33 acquired:T167 buyer:T34
+E26	acquisition:T35 buyer:T36 acquired:T168
+E27	acquisition:T37 buyer:T171 trigger:T172 acquired:T173 seller:T174 date:T170
+E28	acquisition:T38 location:T179 acquired:T178 seller:T177 date:T176 buyer:T175
+E29	acquisition:T39 buyer:T40 acquired:T180 location:T181
+E30	acquisition:T41 buyer:T42 acquired:T183 location:T186
+E31	acquisition:T43 price:T187 acquired:T195 seller:T194 buyer:T193
+E32	job_increase:T44 location:T199 trigger:T198 numIncreased:T196 trigger2:T204
+E33	job_increase:T45 location:T201 location2:T200 organization:T46 trigger:T202
+E34	job_increase:T47 location:T208 trigger:T206 numIncreased:T207 trigger2:T209 organization:T48
+E35	job_increase:T49 numIncreased:T210 trigger:T211 date:T212 organization:T50
+E36	acquisition:T51 buyer:T214 acquired:T52
+E37	job_increase:T53 location:T54
+E38	job_increase:T55 numIncreased:T215 organization:T56
+E39	site_expansion:T57 trigger:T221 organization:T220 location:T222
+E40	job_increase:T58 trigger:T223 numIncreased:T224 date:T226 location:T225 organization:T59
+E41	job_increase:T60 trigger:T227 organization:T61
+E43	job_increase:T64 location:T231 trigger:T63 numIncreased:T233 trigger2:T62 organization:T65
+E44	job_increase:T66 attribute_S:T237 trigger:T236 numIncreased:T235 trigger2:T238 organization:T67 location:T234
+E45	job_increase:T68 trigger:T243 trigger2:T242 numIncreased:T241 location:T239 organization:T69
+E47	job_increase:T72 trigger:T70 numIncreased:T71 location:T244
+E48	job_increase:T73 numIncreased:T245 date:T246 attribute_S:T76
+E49	job_increase:T74 trigger:T247 numIncreased:T248 trigger2:T249 organization:T75
+T78	location 4 12	Berliner
+T79	organization 91 98	Ubisoft
+T80	percent 109 113	75 %
+T81	trigger 118 125	Anteile
+T82	organization 152 165	Kolibri Games
+T83	location 205 213	Augsburg
+T84	organization 192 200	Patrizia
+T85	bankruptcy 224 234	insolvente
+E51	bankruptcy:T85 organization:T86
+T86	organization 261 270	Brickvest
+T87	location 235 252	deutsch-britische
+T88	location 388 396	Münchner
+T89	organization 405 409	zeuz
+T90	location 324 332	Londoner
+T91	organization 363 373	Improbable
+T92	organization 434 442	Kreatize
+T93	location 417 425	Berliner
+T94	organization 523 532	fabrikado
+T95	organization 614 619	Kudan
+T96	organization 630 639	Artisense
+T97	location 591 601	japanische
+T98	location 686 694	Münchner
+T99	organization 695 707	Morten Group
+T100	organization 842 851	Airgreets
+T101	bankruptcy 823 833	insolvente
+E52	bankruptcy:T101 organization:T100
+T102	location 859 865	Kölner
+T103	organization 882 894	Rausgegangen
+T104	organization 934 944	Ask Helmut
+T105	bankruptcy 909 920	insolventen
+E53	bankruptcy:T105 organization:T104
+T106	organization 972 980	McKinsey
+T107	organization 1014 1021	Orpheus
+T108	location 995 1005	Nürnberger
+T109	organization 1100 1110	HDI Gruppe
+T110	location 1125 1133	Berliner
+T111	organization 1142 1149	Perseus
+T112	organization 1179 1187	Facebook
+T113	location 1226 1235	britische
+T114	organization 1244 1252	Deeptide
+T115	organization 1425 1435	Improbable
+T116	organization 1292 1296	zeuz
+T117	product 1364 1368	SCUM
+T118	product 1373 1385	Conan Exiles
+T119	trigger 1540 1550	bestätigte
+T120	organization 1569 1574	Scape
+T121	organization 1531 1539	Facebook
+T122	organization 1600 1611	Tech Crunch
+T123	location 1720 1728	Londoner
+T124	organization 1729 1742	Startup Scape
+T125	organization 1661 1669	Facebook
+T126	trigger 1711 1715	sich
+T127	organization 1801 1821	BellandTechnology AG
+T128	location 1826 1848	Bayreuth (Deutschland)
+T129	organizationRef 1885 1888	VXL
+T130	organization 1898 1918	Xioneer Systems GmbH
+R1	REF Arg1:T127 Arg2:T129	
+T131	location 1971 1975	Wien
+T132	location 1979 1989	Österreich
+T133	organization 2005 2018	Tier Mobility
+T134	location 2027 2035	Londoner
+T135	organization 2044 2056	Pushme Bikes
+T136	location 2139 2147	Berliner
+T137	organization 2309 2342	Amtsgericht Berlin-Charlottenburg
+T138	date 2350 2356	Montag
+T139	bankruptcy 2380 2388	eröffnet
+E54	bankruptcy:T139 trigger:T140 date:T138 organization:T19 location:T136
+T140	trigger 2361 2379	Insolvenzverfahren
+T18	date 2516 2520	3.2.
+T141	organization 2530 2553	Amtsgericht Bremerhaven
+T142	trigger 2558 2583	Insolvenzantragsverfahren
+T143	trigger 2764 2773	Insolvenz
+T144	money 2707 2725	1,2 Millionen Euro
+T145	trigger 2680 2693	Überschuldung
+T146	location 2781 2791	Augsburger
+T147	site_closure 2850 2861	eingestellt
+E17	site_closure:T147 trigger:T148 organization:T28 location:T146
+T148	trigger 2842 2849	Betrieb
+T27	organization 2885 2895	Beiersdorf
+T149	location 2899 2906	Hamburg
+T150	date 2971 2983	Februar 2020
+T151	organization 2995 3025	Stop the Water while using me!
+T152	site_expansion 2954 2963	erweitert
+E21	site_expansion:T152 trigger:T153 organization:T27
+T153	trigger 2916 2925	Portfolio
+T154	organization 3041 3057	Infraserv Höchst
+T155	organization 3066 3088	KFT Chemieservice GmbH
+T156	location 3101 3110	Griesheim
+T157	location 3115 3124	Darmstadt
+T158	site_expansion 3138 3147	erweitert
+E55	site_expansion:T158 trigger:T159 organization:T154 trigger2:T160
+T159	trigger 3179 3197	Leistungsportfolio
+T160	trigger 3161 3167	Zukauf
+T161	organization 3250 3263	4investors.de
+T162	location 3309 3315	Lehrte
+T163	date 3316 3331	in dieser Woche
+T164	location 3335 3343	Sorpesee
+T165	acquiredObj 3349 3381	Fläche von 233.500 Quadratmetern
+T166	number 3484 3486	29
+T167	acquiredObj 3484 3532	29 lebensmittelgeankerte Einzelhandelsimmobilien
+T168	acquiredObj 3607 3655	zwei Fachmarktzentren aus dem „Silver“-Portfolio
+T169	number 3607 3611	zwei
+T170	date 3733 3748	31. Januar 2020
+T171	organization 3668 3672	BASF
+T172	trigger 3681 3687	Erwerb
+T173	acquiredObj 3692 3718	Polyamidgeschäfts (PA 6.6)
+T174	organization 3723 3729	Solvay
+T175	organization 3770 3805	OFRU Recycling GmbH & Co. KG (OFRU)
+T176	date 3929 3946	16. Dezember 2019
+T177	organization 3951 3966	Tecos Bruhin AG
+T178	acquiredObj 3966 4006	Produktlinie Reinigungsanlagen ("Tecos")
+T179	location 4019 4034	Altnau, Schweiz
+T180	acquiredObj 4125 4135	Fachmarkts
+T181	location 4139 4168	Höchstadt a.d. Aisch (Bayern)
+T182	trigger 4200 4203	aus
+T184	site_expansion 4097 4101	baut
+E56	site_expansion:T184 organization:T40 trigger:T185 trigger2:T182
+T185	trigger 4173 4192	Immobilienportfolio
+T183	acquiredObj 4234 4261	Logistik-Projektentwicklung
+T186	location 4329 4337	Hannover
+T187	money 4510 4529	EUR 18,4 Milliarden
+T188	location 4470 4478	Rumänien
+T189	location 4459 4465	Ungarn
+T190	location 4435 4457	Tschechischen Republik
+T191	location 4418 4429	Deutschland
+T192	organization 4404 4414	Unitymedia
+T193	organization 4341 4349	Vodafone
+T194	organization 4358 4372	Liberty Global
+T195	acquiredObj 4389 4478	Kabelnetze von Unitymedia in Deutschland, der Tschechischen Republik, Ungarn und Rumänien
+T196	number 4551 4555	3400
+T197	number 4604 4607	118
+T198	trigger 4556 4569	Arbeitsplätze
+T199	location 4583 4600	Schleswig-Holsten
+T200	location 4720 4739	Gewerbegebiet Aurea
+T201	location 4744 4749	Oelde
+T202	trigger 4667 4680	Personalsuche
+T204	trigger 4630 4633	neu
+T203	site_expansion 4689 4693	neue
+E57	site_expansion:T203 organization:T46 trigger:T205 location:T200 location2:T201
+T205	trigger 4701 4716	Logistikzentrum
+T206	trigger 4786 4790	neue
+T207	number 4782 4785	600
+T208	location 4815 4825	Nördlingen
+T209	trigger 4774 4781	schafft
+T210	number 4941 4946	3.400
+T211	trigger 4947 4951	neue
+T212	date 4828 4847	Im vergangenen Jahr
+T213	number 4890 4893	118
+T214	person 5048 5062	Michael Tojner
+T215	number 5252 5256	2000
+T216	money 5321 5339	160 Millionen Euro
+T217	investment 5340 5350	investiert
+E58	investment:T217 totalPrice:T216 invested:T219 investor:T56
+T218	location 5382 5411	Parkstein (Kreis Neustadt/WN)
+T219	investedObj 5361 5411	Produktionsfläche in Parkstein (Kreis Neustadt/WN)
+T220	organization 5469 5475	abat +
+T221	trigger 5486 5505	neues Firmengebäude
+T222	location 5433 5446	St. Ingberter
+T223	trigger 5685 5690	neuen
+T224	number 5682 5684	80
+T225	location 5617 5623	Berlin
+T226	date 5631 5641	Frühsommer
+T227	trigger 5759 5763	Neue
+T228	money 5747 5758	320 Mio PLN
+T229	investment 5736 5746	investiert
+E59	investment:T229 investor:T61 totalPrice:T228 invested:T230
+T230	investedObj 5759 5776	Neue Arbeitsplätz
+T62	trigger 5903 5910	schafft
+T63	trigger 5915 5919	neue
+T231	location 5937 5947	Österreich
+T232	person 5954 5958	Kurz
+T233	number 5911 5914	300
+T234	location 6115 6132	Markgrafenkaserne
+T235	number 5966 5969	110
+T236	trigger 5970 5974	neue
+T237	attribute 5989 5995	sollen
+T238	trigger 6026 6035	entstehen
+T239	location 6195 6211	Arendseer Straße
+T240	location 6215 6224	Salzwedel
+T241	number 6225 6228	100
+T242	trigger 6229 6233	neue
+T243	trigger 6248 6256	schaffen
+T70	trigger 6543 6547	neue
+T71	number 6538 6542	1000
+T244	location 6569 6571	A2
+T245	number 6647 6670	vier bis fünf Millionen
+T246	date 6679 6683	2025
+T247	trigger 6729 6733	neue
+T248	number 6725 6728	600
+T249	trigger 6693 6700	schafft
+T76	attribute 6578 6585	rechnet
+A1	Speculation E48
+A2	Speculation E44

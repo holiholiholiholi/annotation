@@ -1,0 +1,278 @@
+T1	site_expansion 24 32	eröffnen
+T2	site_expansion 163 171	eröffnen
+T3	site_expansion 334 342	eröffnen
+T4	site_expansion 386 394	eröffnen
+T5	site_expansion 481 489	eröffnen
+T6	organization 416 438	Kentucky Fried Chicken
+T7	site_expansion 629 634	bauen
+T8	organization 571 599	Kentucky Fried Chicken (KFC)
+T9	site_expansion 727 736	einziehen
+T10	site_expansion 840 848	eröffnen
+T12	site_expansion 968 976	eröffnet
+T14	site_expansion 1180 1186	öffnet
+T15	site_expansion 1316 1325	Eröffnung
+T16	site_closure 1391 1399	schließt
+T17	organization 1341 1377	Karl Siefert Land- und Gartentechnik
+T18	site_closure 1462 1470	schließt
+T19	organization 1412 1448	Karl Siefert Land- und Gartentechnik
+T21	site_closure 1613 1619	stellt
+T22	organization 1606 1612	Harman
+T27	site_closure 1930 1939	schliesst
+T28	organization 1917 1929	Silent Gliss
+T29	site_closure 2003 2012	schliesst
+T30	organization 1990 2002	Silent Gliss
+T31	site_closure 2094 2102	schließt
+T32	organization 2079 2093	Habisreutinger
+T33	site_closure 2187 2195	schließt
+T34	organization 2182 2186	Bose
+T35	site_closure 2308 2313	dicht
+T36	organization 2255 2259	Bose
+T37	site_closure 2450 2457	geräumt
+T39	organization 2769 2773	Oply
+T44	site_closure 3758 3769	Schliessung
+T46	site_closure 3886 3892	stellt
+T47	organization 3802 3811	Essential
+T48	site_closure 3947 3956	schliesst
+T49	site_closure 4205 4215	Schließung
+T50	layoff 4308 4317	streichen
+T51	organization 4256 4267	Showa Denko
+T52	layoff 4450 4459	streichen
+T53	organization 4360 4371	Showa Denko
+T54	layoff 4493 4501	entlässt
+T55	organization 4483 4492	Consensys
+T58	layoff 4905 4915	Entlassung
+T59	layoff 4966 4972	trennt
+T60	organization 4958 4965	Netflix
+T61	layoff 5109 5118	entlassen
+T62	organization 5041 5048	Netflix
+T63	layoff 5212 5224	Entlassungen
+T66	layoff 5752 5759	abbauen
+T67	layoff 5802 5811	verlieren
+T68	organization 5904 5913	Air Italy
+T70	RnD_opening 6473 6485	eingerichtet
+T71	organization 6367 6395	Volkswagen-IT-Services India
+T72	RnD_opening 6534 6542	eröffnet
+T73	organization 6489 6494	Škoda
+T76	acquisition 6819 6829	übernommen
+E1	site_expansion:T1 trigger:T79 organization:T78 organization2:T77
+E2	site_expansion:T2 trigger:T80 organization:T84 organization2:T83 location:T82
+E3	site_expansion:T3 organization:T87 organization2:T86 location:T88
+E4	site_expansion:T4 trigger:T90 organization:T89 attribute_S:T91
+E5	site_expansion:T5 trigger:T93 organization:T6 location:T92
+E6	site_expansion:T7 trigger:T95 location:T96 organization:T8
+E7	site_expansion:T9 organization:T99 organization2:T98 location:T97 attribute_S:T100
+E8	site_expansion:T10 organization:T103 organization2:T104 location:T102
+E10	site_expansion:T12 location:T110 organization:T109
+E12	site_expansion:T14 trigger:T115 organization:T117
+E13	site_expansion:T15 trigger:T120 organization:T118 location:T119
+E14	site_closure:T16 location:T121 organization:T17
+E15	site_closure:T18 date:T123 location:T122
+E17	site_closure:T21 trigger2:T124 trigger3:T125 organization:T22 location:T126
+E20	site_closure:T27 trigger:T23 organization:T28 location:T20
+E21	site_closure:T29 trigger:T24 organization:T30 location:T25 location2:T26
+E22	site_closure:T31 organization:T32 trigger:T129 location:T130
+E23	site_closure:T33 organization:T34 trigger:T131 location:T132 location2:T133 location3:T134 location4:T135
+E24	site_closure:T35 trigger:T136 trigger2:T137 organization:T36
+E25	site_closure:T37 location:T139 organization:T138
+E29	site_closure:T44 trigger:T40 organization:T41
+E30	site_closure:T46 trigger:T45 trigger2:T149 organization:T47
+E31	site_closure:T48 trigger:T152 organization:T153 date:T154 location:T155 location2:T156
+E32	site_closure:T49 organization:T160 location:T161
+E33	layoff:T50 trigger:T162 numLayoff:T163 organization:T51 location:T164 location2:T165
+E34	layoff:T52 trigger:T166 numLayoff:T167 location:T168 location2:T169 organization:T53
+E35	layoff:T54 numLayoff:T171 trigger:T170 organization:T55
+E37	layoff:T58 trigger:T56 numLayoff:T57 organization:T173 location:T174 date:T175
+E38	layoff:T59 organization:T60 trigger:T177 trigger2:T178
+E39	layoff:T61 location:T181 trigger:T179 numLayoff:T180 organization:T62
+E40	layoff:T63 numLayoff:T182 organization:T183
+E43	layoff:T66 trigger:T65 organization:T199 location:T198 numLayoff:T197
+E44	layoff:T67 trigger:T201 organization:T68 numLayoff:T202
+E46	RnD_opening:T70 trigger:T69 location:T216 location2:T215 opener:T71
+E47	RnD_opening:T72 trigger:T217 opener:T73 rnd:T221
+E49	acquisition:T76 buyer:T225 acquired:T224 price:T222
+T77	organization 0 9	Sparkasse
+T78	organization 14 23	Volksbank
+T79	trigger 36 43	Filiale
+T80	trigger 155 162	Filiale
+T81	location 55 69	Sachsen-Anhalt
+T82	location 74 90	Magdeburg-Buckau
+T83	organization 98 107	Sparkasse
+T84	organization 112 121	Volksbank
+T85	date 175 190	Mitte März 2020
+T86	organization 222 246	Stadtsparkasse Magdeburg
+T87	organization 255 274	Volksbank Magdeburg
+T88	location 282 304	Schönebecker Straße 45
+T89	organization 346 349	KFC
+T90	trigger 350 357	Filiale
+T91	attribute 369 373	soll
+A1	Speculation E4
+T92	location 473 480	Eningen
+T93	trigger 462 469	Filiale
+T94	date 452 456	2020
+T95	trigger 621 628	Filiale
+T96	location 608 615	Eningen
+T97	location 670 685	Solingen Ohligs
+T98	organization 697 707	Rewe-Markt
+T99	organization 717 726	Sparkasse
+T100	attribute 686 692	sollen
+A2	Speculation E7
+T101	date 827 839	Februar 2021
+T102	location 805 811	Ohligs
+T103	organization 744 753	Sparkasse
+T104	organization 762 772	Rewe-Markt
+T11	site_expansion 907 916	Eröffnung
+E9	site_expansion:T11 attribute_N:T105 organization:T106 location:T107
+T105	attribute 891 902	verschieben
+T106	organization 852 856	Rewe
+T107	location 860 866	Ohligs
+A3	Negation E9
+T108	date 960 967	Freitag
+T109	organization 994 1002	Das Nest
+T110	location 984 992	Neustadt
+T111	date 1058 1065	Freitag
+T112	person 1075 1086	Anne Specht
+T113	organization 1097 1105	Das Nest
+T114	location 1114 1130	Mainzer Neustadt
+T13	site_expansion 1066 1074	eröffnet
+E11	site_expansion:T13 organization:T113 location:T114
+T115	trigger 1204 1209	Türen
+T116	date 1153 1178	kommenden Freitag , 14.2.
+T117	organization 1188 1196	Das Nest
+T118	organization 1296 1301	Taela
+T119	location 1282 1293	Feldkirchen
+T120	trigger 1326 1332	feiern
+T121	location 1381 1390	Griesheim
+T122	location 1452 1461	Griesheim
+T123	date 1475 1486	29. Februar
+T124	trigger 1627 1634	Betrieb
+T125	trigger 1702 1705	ein
+T126	location 1736 1749	Gäubodenstadt
+T23	trigger 1946 1954	Standort
+T20	location 1958 1966	Gümligen
+T24	trigger 2018 2027	Standorte
+T25	location 2031 2039	Gümligen
+T26	location 2044 2048	Lass
+T127	location 2072 2076	Bern
+T128	relocation 2053 2058	zeiht
+E16	relocation:T128 organization:T30 newLocation:T127 oldLocation:T25 oldLocation2:T26
+T129	trigger 2103 2110	Filiale
+T130	location 2114 2122	Biberach
+T131	trigger 2201 2206	Läden
+T132	location 2210 2216	Europa
+T133	location 2218 2229	Nordamerika
+T134	location 2231 2241	Australien
+T135	location 2246 2251	Japan
+T136	trigger 2314 2320	machen
+T137	trigger 2293 2307	Ladengeschäfte
+T138	organization 2405 2415	Krone-Post
+T139	location 2423 2444	Hilzinger Hauptstraße
+T140	organization 2571 2580	LiveCycle
+T141	organization 2650 2654	Circ
+T142	organization 2696 2700	Bird
+T143	date 2818 2829	27. Februar
+T144	location 2848 2859	Deutschland
+T38	bankruptcy 2581 2590	Insolvenz
+E18	bankruptcy:T38 organization:T140
+T145	acquisition 2660 2669	Übernahme
+E19	acquisition:T145 acquired:T141 buyer:T142
+T146	market_exit 2791 2797	stellt
+E26	market_exit:T146 trigger:T147 trigger2:T148 organization:T39 date:T143
+T147	trigger 2837 2844	Betrieb
+T148	trigger 2860 2863	ein
+T40	trigger 3774 3786	Unternehmens
+T41	organization 3665 3674	Essential
+T42	organization 3684 3691	Android
+T43	person 3705 3715	Andy Rubin
+T45	trigger 3897 3904	Betrieb
+T149	trigger 3905 3908	ein
+T150	person 3838 3848	Andy Rubin
+T151	organization 3821 3828	Android
+T152	trigger 4010 4019	Geschäfte
+T153	organization 3981 3989	Finnshop
+T154	date 3997 4003	Sommer
+T155	location 4042 4045	Wil
+T156	location 4050 4060	Frauenfeld
+T157	market_exit 4094 4100	stellt
+E27	market_exit:T157 trigger:T158 trigger2:T159 organization:T153
+T158	trigger 4113 4131	Geschäftstätigkeit
+T159	trigger 4132 4135	ein
+T160	organization 4170 4178	Finnshop
+T161	location 4182 4192	Frauenfeld
+T162	trigger 4233 4240	Stellen
+T163	number 4229 4232	140
+T164	location 4285 4294	Meitingen
+T165	location 4299 4307	Augsburg
+T166	trigger 4439 4446	Stellen
+T167	number 4435 4438	140
+T168	location 4426 4434	Augsburg
+T169	location 4403 4412	Meitingen
+T170	trigger 4510 4521	Mitarbeiter
+T171	percent 4502 4505	14%
+T172	organization 4462 4470	Ethereum
+T56	trigger 4934 4946	Mitarbeitern
+T57	number 4931 4933	80
+T173	organization 4859 4870	Es Murterar
+T174	location 4875 4882	Alcúdia
+T175	date 4883 4896	Anfang Januar
+T176	site_closure 4824 4838	Teilschließung
+E28	site_closure:T176 organization:T173
+T177	trigger 4973 4977	sich
+T178	trigger 4990 5002	Mitarbeitern
+T179	trigger 5056 5067	Mitarbeiter
+T180	number 5053 5055	15
+T181	location 5097 5108	Los Angeles
+T182	number 5208 5211	200
+T183	organization 5249 5258	Marquardt
+T184	organization 5276 5285	Crane Co.
+T185	organization 5322 5354	Friedrich Krombach GmbH & Co. KG
+T186	date 5355 5359	2008
+T187	date 5402 5412	Donnerstag
+T188	acquisition 5360 5370	übernommen
+E36	acquisition:T188 buyer:T184 acquired:T185 date:T186
+T64	number 5475 5478	150
+T189	date 5502 5506	2021
+T190	percent 5516 5526	20 Prozent
+T191	organization 5531 5549	Krombach Armaturen
+T192	person 5579 5594	Andree Jorgella
+T193	organization 5603 5619	IG Metall Siegen
+T194	layoff 5550 5561	beschäftigt
+E41	layoff:T194 trigger:T196 trigger2:T195 numBefore:T64 numAfter:T190 date:T189 organization:T191
+T195	trigger 5507 5515	nur noch
+T196	trigger 5479 5491	Mitarbeitern
+T65	trigger 5744 5751	Stellen
+T197	percent 5729 5739	80 Prozent
+T198	location 5690 5700	Kredenbach
+T199	organization 5668 5686	Krombach Armaturen
+T200	organization 5649 5657	Crane Co
+T201	trigger 5919 5932	Arbeitsplätze
+T202	number 5763 5768	1.450
+T203	organization 5957 5960	ABB
+T204	location 6007 6010	Ózd
+T205	location 6012 6025	Nordostungarn
+T206	number 6049 6053	1000
+T207	site_closure 6027 6039	abzuschalten
+E42	site_closure:T207 organization:T203 location:T204
+T208	layoff 6066 6075	entlassen
+E50	layoff:T208 trigger:T209 numLayoff:T206 organization:T203
+T209	trigger 6054 6062	Menschen
+T210	organization 6093 6110	Bühler Holding AG
+T211	organization 6115 6123	Givaudan
+T212	trigger 6233 6251	Innovationszentrum
+T213	RnD_opening 6296 6305	errichten
+E51	RnD_opening:T213 trigger:T212 location:T214 opener:T210 opener2:T211
+T214	location 6284 6292	Singapur
+T69	trigger 6422 6441	Entwicklungszentrum
+T215	location 6455 6463	Gurugram
+T216	location 6468 6472	Pune
+T217	trigger 6603 6621	Innovationszentrum
+T218	location 6556 6560	Prag
+T219	location 6562 6570	Tel Aviv
+T220	location 6575 6581	Peking
+T221	organization 6521 6529	DigiLabs
+T74	organization 6625 6651	Clariant Refinery Services
+T75	site_expansion 6687 6695	eröffnet
+E45	site_expansion:T75 organization:T74
+T222	money 6858 6881	200 Millionen US-Dollar
+T223	money 6896 6914	180 Millionen Euro
+T224	organization 6811 6818	Xnor.ai
+T225	organization 6785 6790	Apple
